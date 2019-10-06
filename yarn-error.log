@@ -1,0 +1,102 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\YOUB\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js publish --access public
+
+PATH: 
+  C:\Users\YOUB\AppData\Local\Temp\yarn--1570282812397-0.8112431182974909;C:\Users\YOUB\Desktop\projects\react-trellob-master\node_modules\.bin;C:\Users\YOUB\AppData\Local\Yarn\Data\link\node_modules\.bin;C:\Users\YOUB\AppData\Local\Yarn\bin;C:\Program Files\libexec\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\lib\node_modules\npm\bin\node-gyp-bin;C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\YOUB\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\Tools\Binn;C:\Program Files\Microsoft SQL Server\140\DTS\Binn;C:\Program Files\PuTTY;C:\Users\YOUB\.windows-build-tools\python27;C:\Users\YOUB\.windows-build-tools\python27;C:\Users\YOUB\AppData\Local\Microsoft\WindowsApps;C:\Users\YOUB\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\YOUB\AppData\Roaming\npm
+
+Yarn version: 
+  1.19.0
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/-/user/org.couchdb.user:ayoubyoub: The password you have entered was detected on a public list of known compromised passwords. Please enter a different password.
+      at Request.params.callback [as _callback] (C:\Users\YOUB\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66918:18)
+      at Request.self.callback (C:\Users\YOUB\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140539:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (C:\Users\YOUB\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141511:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (C:\Users\YOUB\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141433:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "react-trellob",
+    "version": "0.1.0",
+    "description": "Trellob board lib for React",
+    "main": "dist/index.js",
+    "files": [
+      "dist/index.js"
+    ],
+    "repository": "https://github.com/ayoubyoub/react-trellob",
+    "author": "YOUB Ayoub",
+    "license": "MIT",
+    "peerDependencies": {
+      "react": "^16.8.0",
+      "styled-components": ">=3"
+    },
+    "devDependencies": {
+      "@babel/core": "7.6.2",
+      "@babel/preset-env": "7.6.2",
+      "@babel/preset-react": "7.0.0",
+      "@cypress/code-coverage": "1.10.1",
+      "@testing-library/jest-dom": "4.0.0",
+      "@testing-library/react": "8.0.7",
+      "all-contributors-cli": "6.9.1",
+      "babel-loader": "8.0.6",
+      "babel-plugin-istanbul": "5.2.0",
+      "babel-plugin-react-remove-properties": "0.3.0",
+      "cross-env": "6.0.2",
+      "cypress": "3.4.1",
+      "docz": "2.0.0-rc.52",
+      "eslint": "6.5.1",
+      "eslint-config-standard": "14.1.0",
+      "eslint-config-standard-react": "9.2.0",
+      "eslint-plugin-cypress": "2.7.0",
+      "eslint-plugin-import": "2.18.2",
+      "eslint-plugin-node": "10.0.0",
+      "eslint-plugin-promise": "4.2.1",
+      "eslint-plugin-react": "7.15.1",
+      "eslint-plugin-react-hooks": "2.1.1",
+      "eslint-plugin-standard": "4.0.1",
+      "html-webpack-plugin": "3.2.0",
+      "istanbul-lib-coverage": "2.0.5",
+      "jest": "24.8.0",
+      "jest-environment-jsdom-fifteen": "1.0.0",
+      "nyc": "14.1.1",
+      "react": "16.10.1",
+      "react-dom": "16.10.1",
+      "start-server-and-test": "1.10.3",
+      "styled-components": "4.4.0",
+      "webpack": "4.41.0",
+      "webpack-cli": "3.3.9",
+      "webpack-dev-server": "3.8.1"
+    },
+    "scripts": {
+      "build": "webpack --config webpack.prod.js",
+      "build:publish": "rm -rf dist/ && webpack --config webpack.prod.js && yarn publish --access public",
+      "server": "webpack-dev-server --config webpack.dev.js",
+      "test": "jest",
+      "contributors:add": "all-contributors add",
+      "start": "webpack-dev-server --open --config webpack.dev.js",
+      "cypress": "cypress",
+      "docz": "docz",
+      "dev": "cross-env NODE_ENV=cypress start-test server 8080 'cypress open'"
+    },
+    "dependencies": {
+      "react-beautiful-dnd": "^11.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

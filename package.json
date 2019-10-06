@@ -1,0 +1,67 @@
+{
+  "name": "react-trellob",
+  "version": "0.1.0",
+  "description": "Trello board lib for React",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "repository": "https://github.com/ayoubyoub/react-trellob",
+  "author": "YOUB Ayoub",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "styled-components": ">=3"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.2",
+    "@babel/preset-env": "7.6.2",
+    "@babel/preset-react": "7.0.0",
+    "@cypress/code-coverage": "1.10.1",
+    "@testing-library/jest-dom": "4.0.0",
+    "@testing-library/react": "8.0.7",
+    "all-contributors-cli": "6.9.1",
+    "babel-loader": "8.0.6",
+    "babel-plugin-istanbul": "5.2.0",
+    "babel-plugin-react-remove-properties": "0.3.0",
+    "cross-env": "6.0.2",
+    "cypress": "3.4.1",
+    "docz": "2.0.0-rc.52",
+    "eslint": "6.5.1",
+    "eslint-config-standard": "14.1.0",
+    "eslint-config-standard-react": "9.2.0",
+    "eslint-plugin-cypress": "2.7.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.15.1",
+    "eslint-plugin-react-hooks": "2.1.1",
+    "eslint-plugin-standard": "4.0.1",
+    "html-webpack-plugin": "3.2.0",
+    "istanbul-lib-coverage": "2.0.5",
+    "jest": "24.8.0",
+    "jest-environment-jsdom-fifteen": "1.0.0",
+    "nyc": "14.1.1",
+    "react": "16.10.1",
+    "react-dom": "16.10.1",
+    "start-server-and-test": "1.10.3",
+    "styled-components": "4.4.0",
+    "webpack": "4.41.0",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.8.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "build:publish": "rm -rf dist/ && webpack --config webpack.prod.js && yarn publish --access public",
+    "server": "webpack-dev-server --config webpack.dev.js",
+    "test": "jest",
+    "contributors:add": "all-contributors add",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "cypress": "cypress",
+    "docz": "docz",
+    "dev": "cross-env NODE_ENV=cypress start-test server 8080 'cypress open'"
+  },
+  "dependencies": {
+    "react-beautiful-dnd": "^11.0.0"
+  }
+}
